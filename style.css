@@ -84,6 +84,8 @@ section p {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 2em;
+  padding: 2em 0; /* ← 新增 padding 讓整塊區塊呼吸感更好 */
+  background: linear-gradient(to right, #fff5dc, #fffaf0); /* 柔和背景漸層 */
 }
 
 .hero-text {
@@ -92,13 +94,15 @@ section p {
 }
 
 .hero-text h1 {
-  font-size: 2em;
-  margin-bottom: 0.5em;
+  font-size: 2.4em; /* 大一點更醒目 */
+  margin-bottom: 0.6em;
+  color: #333; /* 加深對比 */
 }
 
 .hero-text p {
-  font-size: 1.1em;
-  margin-bottom: 1em;
+  font-size: 1.2em;
+  margin-bottom: 1.2em;
+  color: #555;
 }
 
 .hero-text button {
@@ -117,9 +121,9 @@ section p {
 
 .hero-image img {
   max-width: 100%;
-  width: 400px;
-  border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  width: 500px; /* 放大一點 */
+  border-radius: 16px; /* 邊角圓潤一點 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 陰影柔和一些 */
 }
 
 /* 口味卡片、推薦卡片 */
@@ -295,4 +299,154 @@ section button:hover {
 
 #allFlavors {
   display: none; /* 一開始先隱藏 */
+}
+
+.full-width {
+  width: 100%;
+  background-color: #fffaf0; /* 保持背景一致 */
+}
+
+.full-width .container {
+  max-width: none; /* 移除 container 限制 */
+  padding: 0; /* 移除 padding */
+  display: flex;
+  justify-content: center;
+}
+
+.full-width .fb-page {
+  max-width: 1000px; /* 保留貼文最大寬度 */
+}
+
+.partner-cards.scrollable {
+  display: flex;
+  flex-wrap: nowrap; /* 不要換行，橫向捲動 */
+  overflow-x: auto;
+  padding-bottom: 1em;
+  gap: 1em;
+  scroll-snap-type: x mandatory;
+}
+
+.partner-cards.scrollable::-webkit-scrollbar {
+  height: 8px;
+}
+
+.partner-cards.scrollable::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.partner-cards.scrollable .partner-card {
+  flex: 0 0 auto;
+  width: 220px; /* 固定卡片寬度 */
+  background-color: #fffef8;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  padding: 1em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease;
+  scroll-snap-align: start;
+}
+
+.partner-cards.scrollable .partner-card:hover {
+  transform: translateY(-5px);
+}
+
+.partner-cards.scrollable .partner-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.5em;
+}
+
+.partner-cards.scrollable .partner-card h3 {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin: 0.3em 0;
+}
+
+.partner-cards.scrollable .partner-card p {
+  font-size: 0.9em;
+  color: #555;
+  margin: 0.3em 0 0.5em 0;
+}
+
+.partner-cards.scrollable .partner-card .social-icons.small-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: auto;
+}
+
+.partner-cards.scrollable .partner-card .social-icons.small-icons a {
+  font-size: 1.3em;
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+.partner-cards.scrollable .partner-card .social-icons.small-icons a:hover {
+  color: #f4c542;
+}
+
+/* 追蹤我們區塊 */
+.follow-us {
+  padding: 4em 0;
+  text-align: center;
+  background-color: #fff5dc;
+}
+
+.follow-us h2 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+.follow-us p {
+  font-size: 1em;
+  margin-bottom: 1em;
+  color: #666;
+}
+
+.follow-us .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.follow-us .social-icons a {
+  font-size: 2em;
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+.follow-us .social-icons a:hover {
+  color: #f4c542;
+}
+
+/* 最新消息 iframe 自適應排版 */
+#newsSection iframe {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+#newsSection .news-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2em 1em;
+}
+
+#newsSection .news-container h2 {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+  color: #333;
+}
+
+#newsSection iframe {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
 }
