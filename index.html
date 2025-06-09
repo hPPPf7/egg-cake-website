@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>雞蛋糕工坊</title>
+    <title>小A雞蛋糕</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -15,12 +15,12 @@
   <div class="container header-flex">
     <div class="logo">
       <img src="images/logo.png" alt="雞蛋糕工坊 Logo" />
-      雞蛋糕工坊
+      小A雞蛋糕
     </div>
     <nav>
       <ul>
         <li><a href="#menuSection">口味介紹</a></li>
-        <li><a href="#aboutSection">最新消息</a></li>
+        <li><a href="#newsSection">最新消息</a></li>
         <li><a href="#storeSection">店鋪資訊</a></li>
         <li><a href="#socialSection">社群連結</a></li>
       </ul>
@@ -52,6 +52,7 @@
       </p>
     </div>
   </section>
+
 
     <section class="menu-preview" id="menuSection">
     <div class="container">
@@ -210,26 +211,40 @@
 
 </div>
 
-
-
-      
       <button id="toggleFlavors">查看全部口味</button>
     </div>
   </section>
+
+
+<section class="full-width" id="newsSection">
+  <div class="news-container">
+    <h2>最新消息</h2>
+    <iframe 
+      src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0pRbZMfqMhtLJ1ZdWX6YQ8mvMz3Fabi33omvkJ5J4SkVfDvG3JKb4rM2a1u2iWDD3l%26id%3D100064278752348&show_text=true&width=500" 
+      width="500" 
+      height="666" 
+      style="border:none;overflow:hidden;" 
+      scrolling="no" 
+      frameborder="0" 
+      allowfullscreen="true" 
+      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+    </iframe>
+  </div>
+</section>
 
     <section class="store-info" id="storeSection">
     <div class="container">
       <h2>門市資訊</h2>
       <div class="store-details">
-        <p><i class="fa-solid fa-store"></i> 台北市中山區熱鬧街123號</p>
+        <p><i class="fa-solid fa-store"></i> 高雄市鳳山區成功路10號</p>
         <p>
-          <i class="fa-solid fa-clock"></i> 營業時間：每週三～週日 13:00 – 20:00
+          <i class="fa-solid fa-clock"></i> 營業時間：每週一～週五 16:00 – 20:30（週六不固定，可來電詢問）
         </p>
-        <p><i class="fa-solid fa-phone"></i> 0900-000-123</p>
+        <p><i class="fa-solid fa-phone"></i> 0936-350-561</p>
       </div>
       <div class="map-container">
         <iframe
-          src="https://www.google.com/maps/embed?pb=..."
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58925.22967603556!2d120.28222304863277!3d22.622940000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e1ba04db479ab%3A0xa0b12109dea2479d!2z5bCPQembnuibi-ezlQ!5e0!3m2!1szh-TW!2stw!4v1749457414161!5m2!1szh-TW!2stw"
           width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
         </iframe>
       </div>
@@ -239,46 +254,67 @@
     <section class="partner-section" id="partnerSection">
     <div class="container">
       <h2>推薦好店</h2>
-      <div class="partner-cards">
-        <!-- 推薦好店範例 -->
-        <div class="partner-card">
-          <img src="https://via.placeholder.com/200x120.png?text=甜點小鋪" alt="甜點小鋪" />
-          <h3>甜點小鋪</h3>
-          <p>每日限量手作布丁，吃過會想念！</p>
-          <a href="https://www.instagram.com/example1" target="_blank">IG 連結</a>
-        </div>
-        <div class="partner-card">
-          <img src="https://via.placeholder.com/200x120.png?text=果醬森林" alt="果醬森林" />
-          <h3>果醬森林</h3>
-          <p>天然果醬，搭配雞蛋糕超加分！</p>
-          <a href="https://www.facebook.com/example2" target="_blank">FB 連結</a>
-        </div>
-        <div class="partner-card">
-          <img src="https://via.placeholder.com/200x120.png?text=奶茶俱樂部" alt="奶茶俱樂部" />
-          <h3>奶茶俱樂部</h3>
-          <p>在地人氣飲品品牌，冬瓜奶茶超讚！</p>
-          <a href="https://www.instagram.com/example3" target="_blank">IG 連結</a>
-        </div>
-      </div>
+      <div class="partner-cards scrollable">
+  <div class="partner-card">
+    <img src="images/example1.jpg" alt="愛餡之家（豬肉餡餅專賣）" />
+    <h3>愛餡之家（豬肉餡餅專賣）</h3>
+    <p>豬肉餡餅專賣，吃過會想念！</p>
+    <div class="social-icons small-icons">
+      <a href="https://www.facebook.com/profile.php?id=100090072828903&locale=zh_TW" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
     </div>
-  </section>
+  </div>
 
-     <section class="social-media" id="socialSection">
-    <div class="container">
-      <h2>追蹤我們</h2>
-      <div class="social-icons">
-        <a href="https://www.instagram.com/" target="_blank">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://www.facebook.com/" target="_blank">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-      </div>
+  <div class="partner-card">
+    <img src="images/example2.jpg" alt="淳粹愛雜貨" />
+    <h3>淳粹愛雜貨</h3>
+    <p>超加分！</p>
+    <div class="social-icons small-icons">
+      <a href="https://www.instagram.com/mia.zakka?igsh=cG5oeHBleHVyMWJh" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/chun.love.zakka?locale=zh_TW" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
     </div>
-  </section>
+  </div>
+
+  <div class="partner-card">
+    <img src="images/example3.jpg" alt="烏材林鹽水雞" />
+    <h3>烏材林鹽水雞</h3>
+    <p>超好吃！</p>
+    <div class="social-icons small-icons">
+      <a href="https://www.facebook.com/maggiechen581126?locale=zh_TW" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+    </div>
+  </div>
+  
+
+  <!-- 你可以再加更多卡片 -->
+</div>
+
+
+    </div>
+  <section class="follow-us" id="socialSection">
+  <div class="container">
+    <h2>追蹤更多消息</h2>
+    <p>歡迎在社群平台上關注我們，掌握最新動態與優惠！</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/judy.580813?igsh=aDgwcjdlbzdyaDd4" target="_blank" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=100064278752348&locale=zh_TW" target="_blank" aria-label="Facebook">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
 
     <footer>
-    <p>© 2025 雞蛋糕工坊. All rights reserved.</p>
+    <p>© 2025 小A雞蛋糕. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
