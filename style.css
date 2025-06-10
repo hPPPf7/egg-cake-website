@@ -84,8 +84,8 @@ section p {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 2em;
-  padding: 2em 0; /* ← 新增 padding 讓整塊區塊呼吸感更好 */
-  background: linear-gradient(to right, #fff5dc, #fffaf0); /* 柔和背景漸層 */
+  padding: 4em 1.5em;
+  background-color: #fffaf0;
 }
 
 .hero-text {
@@ -237,10 +237,11 @@ section p {
 /* Footer */
 footer {
   text-align: center;
-  padding: 3em 2em;
+  padding: 1em 0; /* 調成上下 1em，左右 0 */
   background-color: #eee;
-  font-size: 0.9em;
-  border-top: 2px solid #ccc;
+  font-size: 0.8em; /* 字可以再小一點 */
+  border-top: 1px solid #ccc;
+  color: #666; /* 顏色淡一點，不會搶畫面 */
 }
 
 .tag {
@@ -449,4 +450,18 @@ section button:hover {
   max-width: 100%;
   margin: 0 auto;
   display: block;
+}
+
+/* 關於我們區塊優化 */
+.about-text {
+  font-size: 1.1em;
+  line-height: 1.8em;
+  color: #444;
+  margin: 1em auto;
+  max-width: 700px;
+}
+
+.about-text.highlight {
+  font-weight: 600;
+  color: #333;
 }
