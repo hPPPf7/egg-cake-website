@@ -15,5 +15,7 @@ document.getElementById("toggleFlavors").addEventListener("click", function () {
 
 // Mobile menu toggle
 document.getElementById("hamburger").addEventListener("click", function () {
-  document.querySelector("nav ul").classList.toggle("open");
+  const menu = document.querySelector("nav ul");
+  menu.classList.toggle("open");
+  document.body.classList.toggle("menu-open");
 });
