@@ -331,14 +331,20 @@ section button:hover {
   max-width: 1000px; /* 保留貼文最大寬度 */
 }
 
+/* 移除推薦好店區塊左右 padding，避免第一張卡片被截斷 */
+.partner-section .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .partner-cards.scrollable {
   display: flex;
   flex-wrap: nowrap; /* 不要換行，橫向捲動 */
   overflow-x: auto;
-  padding: 0 1.5em 1em; /* 與版心留白一致 */
+  padding: 0 1.5em 1em 0; /* 取消左側留白，方便滑到第一張 */
   gap: 1em;
   scroll-snap-type: x mandatory;
-  scroll-padding-left: 1.5em; /* 第一張卡片不被截斷 */
+  scroll-padding-left: 0; /* 與起始邊對齊 */
 }
 
 .partner-cards.scrollable::-webkit-scrollbar {
