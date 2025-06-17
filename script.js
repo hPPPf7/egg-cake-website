@@ -13,9 +13,7 @@ document.getElementById("toggleFlavors").addEventListener("click", function () {
   }
 });
 
-// Mobile menu toggle
+// 行動版漢堡選單切換
 document.getElementById("hamburger").addEventListener("click", function () {
-  const menu = document.querySelector("nav ul");
-  menu.classList.toggle("open");
-  document.body.classList.toggle("menu-open");
+  document.getElementById("navMenu").classList.toggle("open");
 });
