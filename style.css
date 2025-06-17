@@ -520,3 +520,104 @@ section button:hover {
     display: block;
   }
 }
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  padding: 1rem;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.8em;
+}
+
+.product-card h3 {
+  font-size: 1.1em;
+  margin: 0.4em 0 0.2em;
+  color: #333;
+}
+
+.product-card .desc {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 0.4em;
+  min-height: 2.5em;
+}
+
+.product-card .price {
+  font-weight: bold;
+  color: #e53935;
+  margin-bottom: 0.6em;
+}
+
+.product-card .price .tag {
+  font-size: 0.75em;
+  background-color: #f04f4f;
+  color: white;
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
+  margin-left: 0.5em;
+}
+
+.product-card button.learn-more {
+  background-color: #f4c542;
+  color: #000;
+  border: none;
+  padding: 0.5em 1.2em;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.95em;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.product-card button.learn-more:hover {
+  background-color: #e5b530;
+}
+
+.product-card .img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 130px;
+  background-image: url("images/plate.png"); /* 確保這張圖片存在 */
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 0.5em;
+}
+
+.product-card .img-wrapper .egg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 95%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.product-card:hover .egg {
+  transform: translate(-50%, -50%) scale(1.05);
+  filter: brightness(1.1);
+}
